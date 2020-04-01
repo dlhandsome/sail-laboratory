@@ -1,0 +1,13 @@
+<van-radio-group value="{{ themeConfig.active }}" bind:change="onChange">
+  <van-cell-group>
+    <van-cell
+      wx:for="{{themeConfig.items}}"
+      title="{{item.name}}"
+      clickable
+      data-name="{{item.name}}"
+      bind:click="themeClickHandler"
+    >
+      <van-radio slot="right-icon" checked-color="{{item.color}}" name="{{item.name}}" />
+    </van-cell>
+  </van-cell-group>
+</van-radio-group>

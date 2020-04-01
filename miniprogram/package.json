@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@vant/weapp": "^1.1.0",
+    "@we-debug/core": "^0.1.5",
+    "@we-debug/plugin-vconsole": "^0.1.4"
+  }
+}

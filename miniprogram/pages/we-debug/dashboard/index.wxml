@@ -1,0 +1,19 @@
+    <demo-block title="点击调试胶囊或下方按钮调出调试面板" padding>
+      <view class="row">
+        <van-button type="normal" size="large" bind:click="openDebug">打开调试面板</van-button>
+      </view>
+    </demo-block>
+  
+    <demo-block title="调试错误信息" padding>
+      <view class="row">
+        <van-button type="normal" size="large" bind:click="onClick">模拟报错</van-button>
+      </view>
+    </demo-block>
+  
+    <demo-block title="调试路由信息" padding>
+      <view class="row">
+        <van-button type="normal" size="large" bind:click="testRoute">跳转页面</van-button>
+      </view>
+    </demo-block>
+
+    <we-debug />

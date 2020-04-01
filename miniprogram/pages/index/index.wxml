@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">Welcome to Sail's lab</text>
+    </block>
+  </view>
+</view>
+
+<view class="menu">
+  <van-grid clickable column-num="2">
+    <van-grid-item
+      icon="/images/we-cropper.jpg"
+      link-type="navigateTo"
+      url="../we-cropper/dashboard/index"
+      text="we-cropper"
+    />
+    <van-grid-item
+      icon="/images/we-debug.png"
+      link-type="navigateTo"
+      url="../we-debug/dashboard/index"
+      text="we-debug"
+    />
+    <!-- <van-grid-item
+      icon="notes-o"
+      bind:click="goArtical"
+      text="文章"
+    /> -->
+    <van-grid-item
+      icon="qr"
+      bind:click="showQrModal"
+      text="contact me"
+    />
+  </van-grid>
+
+  <van-overlay show="{{ showQr }}" bind:click="onClickHide">
+    <view class="wrapper">
+      <image class="block" catch:tap="noop" src="../../images/qr.jpg" mode="aspectFit"/>
+    </view>
+  </van-overlay>
+</view>

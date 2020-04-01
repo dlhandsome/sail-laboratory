@@ -1,0 +1,19 @@
+<view class="demo-home">
+  <view
+    class="demo-home__title"
+  >
+    <image mode="aspectFit" class="demo-home__image" src="{{logo}}" />
+    <view class="demo-home__text">{{title}}</view>
+  </view>
+  <view class="demo-home__desc">
+    {{desc}}
+  </view>
+  <slot></slot>
+  <view
+    wx:for="{{ list }}"
+    wx:for-item="group"
+    wx:key="index"
+  >
+    <demo-home-nav group="{{ group }}" />
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<demo-block title="页面路径" padding>
+      {{route}}
+</demo-block>
+<demo-block title="页面参数" padding>
+  <van-cell-group>
+    <van-cell
+      wx:for="{{ query }}"
+      wx:key="name"
+      title="{{item.name}}"
+      value="{{item.value}}" />
+  </van-cell-group>
+</demo-block>
+
+<we-debug />

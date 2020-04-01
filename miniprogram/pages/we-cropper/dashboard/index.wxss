@@ -1,0 +1,19 @@
+page{
+    background-color: #f7f8fa;
+}
+
+.logo{
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 75rpx 0 50rpx 0;
+}
+
+.dashboard-title{
+    position: relative;
+    color: #999;
+}
+
+.setting{
+    margin-top: 25rpx;
+}
